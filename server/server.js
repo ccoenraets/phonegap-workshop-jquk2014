@@ -15,7 +15,7 @@ app.use(express.bodyParser({
 }));
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, '../directory/www')));
+app.use(express.static(path.join(__dirname, '../workshop/www')));
 
 app.get('/employees', employees.findAll);
 app.get('/employees/:id', employees.findById);
